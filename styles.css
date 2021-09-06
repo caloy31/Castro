@@ -1,3 +1,12 @@
+body {
+  background-color: darkslategray;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
 h1 {
   color: black;
 }
@@ -5,4 +14,36 @@ h1 {
 .profile-photo {
   display: flex;
   justify-content: center;
+}
+
+#creepy {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menuButtons {
+  border: 1px solid #2c2c2c;
+  margin: 20px;
+  display: inline-block;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+h2 {
+  color: rgb(26, 23, 23);
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
 }
