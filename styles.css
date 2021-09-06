@@ -25,6 +25,10 @@ h1 {
   margin: 20px;
   display: inline-block;
 }
+.menuButtons:hover {
+  background: #41855d;
+  color: #fff;
+}
 
 .navigation ul {
   margin: 0;
@@ -38,6 +42,11 @@ h1 {
   letter-spacing: 2px;
   padding: 20px;
   font-weight: bold;
+}
+
+.navigation li:hover {
+  background: #41855d;
+  color: #fff;
 }
 
 h2 {
