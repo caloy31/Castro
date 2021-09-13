@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Review on EcmaScript</title>
 
     <style>
+
       * {
         margin: 0 auto;
         padding: 0 auto;
@@ -24,22 +26,62 @@
         scroll-behavior: smooth;
         scroll-padding-top: 6rem;
       }
+ header {
+ position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(red, green, blue, 1);
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #131313;
+}
+
+header .logo i {
+  padding-right: 0.5rem;
+  color: var(--red);
+}
+
+header #navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #f7df1e;
+}
+
+header #navbar a:hover {
+  color: var(--red);
+}
+body{
+    background: #fce534;
+}
       p {
-        max-width: 700px;
+        max-width: 750px;
+        margin-bottom: 30px;
       }
 
       h1 {
         margin-top: 20px;
         margin-bottom: 50px;
         font-size: 3rem;
+        color: rgb(5, 5, 5);
       }
 
       h2 {
+        color: rgb(33, 31, 26);
         margin: 30px 0 30px 0;
+        font-weight: bolder;
+        font-size: 2rem;
       }
 
-      img {
+      figure {
         margin-bottom: 20px;
+        border-radius: 30px;
       }
 
       p {
@@ -47,22 +89,34 @@
         text-align: justify;
         font-size: 1.4rem;
         word-spacing: 1px;
+        color: rgb(34, 36, 34);
       }
     </style>
   </head>
   <body>
     <section>
-      <header>
-        <h1>Review on EcmaScript</h1>
+        <header>
+     <a href="#" class="logo"><i class="fas fa-comment"></i>Review on EcmaScript</a>
+
+     <nav id="navbar">
+         <a href="#rows">History</a>
+          <a href="#rows2">Vanilla JS</a>
+           <a href="#rows3">Trends</a>
+            <a href="#">Pages</a>
+
       </header>
-      <div id="reviews">
+      <div id="reviews1">
         <div id="rows">
           <h2>History of JavaScript</h2>
-          <a href="https://www.youtube.com/watch?v=NQUjEo9iqfo"
-            ><img
-              src="images/javascripthistory.jpeg"
-              alt="JavaScript History thumbnail"
-          /></a>
+          <figure>
+            <iframe
+              width="630"
+              height="365"
+              src="https://youtube.com/embed/NQUjEo9iqfo"
+              frameborder="0"
+            ></iframe>
+          </figure>
+
           <p>
             The history of JavaScript came a long way from being an initial
             draft to the most used web development programming language. In the
@@ -82,13 +136,16 @@
             led to Javascript becoming the language of the web.
           </p>
         </div>
-        <div id="rows">
+        <div id="rows2">
           <h2>What is Vanilla Javascript?</h2>
-          <a href="https://www.youtube.com/watch?v=NQUjEo9iqfo"
-            ><img
-              src="images/vanillajs.jpeg"
-              alt="Vanilla JavaScript thumbnail"
-          /></a>
+          <figure>
+            <iframe
+              width="630"
+              height="365"
+              src="https://www.youtube.com/embed/Nda34efbxhM"
+              frameborder="0"
+            ></iframe>
+          </figure>
           <p>
             Vanilla JavaScript is plain JavaScript without the frameworks and
             liabraries. Vanilla JavaScript utilitezes the javascript library
@@ -98,30 +155,22 @@
             you're doing and the consequences of each line of code.
           </p>
         </div>
-        <div id="rows">
-          <h2>History of JavaScript</h2>
-          <a href="https://www.youtube.com/watch?v=NQUjEo9iqfo"
-            ><img
-              src="images/javascripthistory.jpeg"
-              alt="JavaScript History thumbnail"
-          /></a>
+        <div id="rows3">
+          <h2>What's Google Saying about JavaScript in 2021?</h2>
+          <figure>
+            <iframe
+              width="630"
+              height="365"
+              src="https://www.youtube.com/embed/YG4-l3VaOWc"
+              frameborder="0"
+            ></iframe>
+          </figure>
           <p>
-            The history of JavaScript came a long way from being an initial
-            draft to the most used web development programming language. In the
-            beginning there where a lot of chaos with the development of this
-            programming language and one of those is that Microsoft refuses to
-            add JavaScript in the Internet Explorer which was one of the most
-            used browsers at that time. This chaos did not stop the development
-            of JavaScript then it was submitted by Netscape to ECMA
-            International, which sets the standards for the specification that
-            other web browsers can implement in their system. This specification
-            was called ECMAScript which released versions after the other. The
-            name JavaScript was used to purposely attract developers who used
-            java at that time. Further development to JavaScript led Jesse James
-            Garret a UX Designer to partner up with AJAX technology to enable
-            web pages to load faster and make websites more dynamic. After the
-            meeting in July 2008 in Oslo ECMAScript became more developed which
-            led to Javascript becoming the language of the web.
+            In the video he compared the interest statistics of javascript with other programming languages and based on that result we can assume that due to new language development the interest in javascript decreases. Although this might be true websites that we use on a
+            daily basis runs on JavaScript. This 25-year-old programming language is still the core of web development in our current time.
+            Most programmers suggest having a solid foundation of understanding of the JavaScript language because it still matters in web development. Frameworks like AngularJS, React and View are
+            JavaScript framework that helps developers with pre-written code for easier programming.
+
           </p>
         </div>
       </div>
